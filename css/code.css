@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Regular.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  overflow: hidden;
+  background: rgb(116, 236, 232);
+  background: linear-gradient(
+    117deg,
+    rgba(116, 236, 232, 1) 22%,
+    rgba(110, 204, 237, 1) 59%,
+    rgba(94, 252, 231, 1) 100%
+  );
+}
+.form-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-content .code-form {
+  width: 80%;
+  padding: 50px 0px;
+}
+.form-content .title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #333;
+}
+.form-content .title-under {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+}
+.form-content .input-boxes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  border: 1px solid rgba(0, 0, 0, 0.401);
+  outline: none !important;
+  padding: 5px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+input:focus {
+  border-color: rgba(110, 204, 237, 1);
+}
+
+.form-content .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.form-content .text a {
+  text-decoration: none;
+  color: rgb(64, 161, 175);
+}
+.form-content .text a:hover {
+  text-decoration: underline;
+}
+.form-content .button {
+  color: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.form-content .button button {
+  padding: 10px 30px;
+  background-color: rgb(103, 221, 240);
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.form-content .login-text {
+  text-align: center;
+  margin-top: 25px;
+}
+.flip {
+  cursor: pointer;
+  color: rgb(64, 161, 175);
+}
+.register {
+  background-color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+@media (max-width: 495px) {
+  .code-form {
+    width: 100% !important;
+  }
+  .form-content {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 402px) {
+  .code-form {
+    width: 100% !important;
+  }
+  input {
+    padding: 3px;
+  }
+}
+@media (max-width: 331px) {
+  .form-content {
+    max-width: 600px;
+  }
+  .title {
+    font-size: 33px !important;
+  }
+}
